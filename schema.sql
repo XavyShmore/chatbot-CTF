@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS MESSAGES (
+    ChatId TEXT NOT NULL,
+    MsgIndex INT NOT NULL,
+    Role TEXT NOT NULL,
+    Message TEXT NOT NULL
+    );

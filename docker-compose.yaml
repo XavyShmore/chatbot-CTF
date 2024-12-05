@@ -1,0 +1,9 @@
+services:
+  chatbot:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: chatbot
+    ports:
+      - "80:5000"
+    restart: always

@@ -1,0 +1,5 @@
+<div id="chat-window">
+    {% for username, message in messages %}
+        {% include 'message.html' with context %}
+    {% endfor %}
+</div>

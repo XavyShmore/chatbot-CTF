@@ -1,0 +1,10 @@
+<div class="message user"
+            hx-get="/reply"
+            hx-trigger="load"
+            hx-swap="outerHTML"
+            hx-target=".loading_message">
+    {{ message }}
+</div>
+<div class="message assistant loading_message">
+    <div class="loading-icon">⏳ Loading...</div>
+</div>

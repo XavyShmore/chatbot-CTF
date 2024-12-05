@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include'chat_window.html' with context %}
+
+<form hx-post="/send"
+      hx-swap="beforeend"
+      hx-target="#chat-window"
+      autocomplete="off"
+      id="chat-form">
+    <input type="text" name="message" placeholder="Type a message..." required id="chat-input">
+    <button type="submit">Send</button>
+</form>
+    <button id="reset-button" hx-get="/reset" hx-target="#chat-window" hx-swap="outerHTML">Reset Chat</button>
+{% endblock %}
